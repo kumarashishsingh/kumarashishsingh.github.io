@@ -635,11 +635,6 @@ body{
     color: #2563eb;
 }
 
-.privacy-data{
-    text-align: justify;
-    padding-left: 5rem;
-
-}
 
 @media screen and (min-width:640px) {
     .news-title{
