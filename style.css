@@ -13,6 +13,10 @@
     --dark-gray: #555;
 }
 
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -98,9 +102,9 @@ body{
 }
 
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:768px) {
     .contact-button{
-        display: block;
+        display: none;
     }
     
 }
@@ -219,6 +223,12 @@ body{
     vertical-align: middle;
 }
 
+.Gitimage{
+    color: #2563eb;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
 
 
 .start-button,
@@ -236,12 +246,13 @@ body{
 
 
 .tour-button{
-    background-color: var(--dark-gray);  
+    margin-left: 5px;
+    background-color: var(--primary-color);  
 }
 
 
 .start-button:hover{
-    background-color: #5254f8;
+    background-color: var(--gray);
 }
 
 
@@ -560,8 +571,8 @@ body{
     background-color: var(--background-color);
     max-width: 1280px;
     height: 40vh;
-    /* padding: 2rem; */
-    /* margin: 0 auto; */
+    padding: 2rem;
+    margin: 0 auto;
 }
 
 .newsletter-content{
@@ -601,8 +612,14 @@ body{
 }
 
 @media screen and (min-width:640px){
+    .newsletter-container{
+        display: column;
+        flex-direction: column-reverse;
+        
+    }
     .news-left{
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 50%;
     }
     .news-right{
@@ -717,7 +734,7 @@ body{
 }
 
 .footer-top{
-    width: 34%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.65rem;
@@ -760,6 +777,9 @@ body{
 }
 
 .social{
+    /* padding-left: 10px; */
+    align-items: center;
+    justify-content: center;
     display: flex;
     gap: 0.8rem;
 }
